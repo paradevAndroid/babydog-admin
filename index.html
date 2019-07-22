@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BabyDog</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	<script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="actionBar">
+		    <img id="imgLogo" src="res/ic_logo.png">
+		    <h1>Найти исполнителя</h1>
+		    <div class="search">
+		    	<input id="inputWorker" type="tel" name="findWorker" maxlength="12">
+		    	<a href="javascript:findWorker();">
+		    		<img src="res/ic_search.png">
+		    	</a>
+		    </div>
+	    </div>
+	    <div class="actionArea">
+	    	<div id="worker" class="content">
+	    		<h1 id="titleWorker">Исполнитель</h1>
+	    		<div id="upSection">
+	    			<div>
+	    		    <h1 id="txtName" class="txtWorker">Name</h1>
+	    		    <h1 id="txtDateOfBirth" class="txtWorker">Date of Birth</h1>
+	    		    <h1 id="txtLocation" class="txtWorker">Location</h1>
+	    		    <h1 id="txtEmail" class="txtWorker">Email</h1>
+	    		    <h1 id="txtPhone" class="txtWorker">Phone</h1>
+	    		    <h1 id="txtSkills" class="txtWorker">Skills</h1>
+	    		</div>
+	    		<div>
+	    			<img id="imgAvatar">
+	    			<button id="btnActv" onclick="changeStatus();">
+	    			Activate</button>
+	    		</div>
+	    		</div>
+	    		<div id="documents">
+	    			<img id="photo1">
+	    			<img id="photo2">
+	    		</div>
+	        </div>
+	        <!-- <div id="customer" class="content">
+	        </div> -->
+	    </div>
+	</div>
+</body>
+</html>
