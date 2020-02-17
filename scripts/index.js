@@ -1,5 +1,5 @@
 //let URL = 'https://petsittersa.herokuapp.com/';
-let URL = 'https://596350e9.ngrok.io/';
+let URL = 'https://baby-dog-server.herokuapp.com/';
 let userId = 0;
 
 function findWorker(){
@@ -93,7 +93,7 @@ function changeStatus(){
 	let btnActv = $('#btnActv');
 	console.log(userId);
 	console.log(btnActv.val());
-	$.post(URL + 'info/changeStatus',
+	$.post(URL + 'worker/changeStatus/' + userId,
     	{id: userId, type: 'Worker'},function(data,status){
               console.log(data)
               if (data.status) {
